@@ -14,8 +14,30 @@
             <input type="text" class="passbox" disabled>
         </div>
 
-        <input type="range" min="1" max="30" value="5" >
+        <input class="custom-slider" id="scroll" type="range" min="1" max="30" value="5" >
+        <div class="passwlen row">
+                <p>Password Length:</p>
+                <span>4</span>       <!-- span uses only that much width which is req-->
+        </div>
 
+        <div class="lowerc row">
+            <label for="lowercase">Include lowercase letters (a-z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase">
+        </div>
+        <div class="uppercasec row">
+            <label for="uppercase">Include uppercase letters (A-Z)</label>
+            <input type="checkbox" name="uppercase" id="uppercase">
+        </div>
+        <div class="digitsc row">
+            <label for="digits">Include digits (0-9)</label>
+            <input type="checkbox" name="digits" id="digits">
+        </div>
+        <div class="symbolsc row">
+            <label for="symbols">Include symbols (@#$&*)</label>
+            <input type="checkbox" name="symbols" id="symbols">
+        </div>
+        
+        
 
 
 
