@@ -11,13 +11,13 @@
         <h1>Password Generator</h1>
 
         <div class="inputbox">
-            <input type="text" class="passbox" disabled>
+            <input type="text" class="passbox" id="passwbox" disabled>
         </div>
 
-        <input class="custom-slider" id="scroll" type="range" min="1" max="30" value="5" >
+        <input class="custom-slider" id="slider" type="range" min="1" max="30" value="5" >
         <div class="passwlen row">
                 <p>Password Length:</p>
-                <span>4</span>       <!-- span uses only that much width which is req-->
+                <span id="slidervalue">4</span>       <!-- span uses only that much width which is req-->
         </div>
 
         <div class="lowerc row">
@@ -33,9 +33,10 @@
             <input type="checkbox" name="digits" id="digits">
         </div>
         <div class="symbolsc row">
-            <label for="symbols">Include symbols (@#$&*)</label>
+            <label for="symbols">Include symbols (~!@#$%^&*)</label>
             <input type="checkbox" name="symbols" id="symbols">
         </div>
+        <button class="genbut" id="genebutton">Generate Password</button>
         
         
 

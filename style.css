@@ -75,3 +75,34 @@ h1 {
     width:100%;
     justify-content: space-between;
 }
+.row input[type="checkbox"]{
+    width:15px;
+    height:15px;
+}
+.passwlen{
+    font-weight: 600;
+}
+
+.genbut{
+    background-color: #ffffff;
+    color: #008080; /* Teal text */
+    border: 2px solid #008080; /* Teal border */
+    height:3rem;
+    width:19rem;
+    font-size: 1rem;
+    font-weight: 550;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.genbut:hover {
+    background-color: #008080; /* Teal background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+.genbut:active {
+    background-color: #ffa500; /* Orange background on click */
+    border-color: #ffa500; /* Orange border on click */
+    color: #ffffff; /* White text on click */
+}
