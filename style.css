@@ -117,3 +117,6 @@ h1 {
     padding: 1px;
     cursor: pointer;
 }
+.hidden{
+    visibility: hidden;
+}

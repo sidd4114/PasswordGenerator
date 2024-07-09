@@ -13,15 +13,18 @@
         <h1>Password Generator</h1>
         <div class="inputbox">
             <input type="text" class="passbox" id="passwbox" disabled>
-            <span id="copyicon" class="material-symbols-outlined">
-                content_copy
-                </span>
+            <span id="copyicon" class="material-symbols-outlined">content_copy</span>
+            <span class="material-symbols-outlined hidden" id="tickicon">check</span>
         </div>
 
-        <input class="custom-slider" id="slider" type="range" min="1" max="30" value="5" >
+
+
+        
+
+        <input class="custom-slider" id="slider" type="range" min="1" max="30" value="1" >
         <div class="passwlen row">
                 <p>Password Length:</p>
-                <span id="slidervalue">4</span>       <!-- span uses only that much width which is req-->
+                <span id="slidervalue">1</span>       <!-- span uses only that much width which is req-->
         </div>
 
         <div class="lowerc row">
@@ -48,18 +51,6 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="popup.js"></script>
     
 </body>

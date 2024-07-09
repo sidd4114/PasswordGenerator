@@ -7,6 +7,8 @@ let uppercase=document.getElementById("uppercase");
 let digits=document.getElementById("digits");
 let symbols=document.getElementById("symbols");
 let copyicon=document.getElementById("copyicon");
+let tickicon=document.getElementById("tickicon");
+
 
 inputslider.addEventListener('input',()=>{
     slidervalue.textContent=inputslider.value;  //showing input value when it changes
@@ -24,7 +26,21 @@ let allnumbers="0123456789";
 let allsymbol="~!@#$%^&*";
 
 
+copyicon.addEventListener('click',()=>{
+    navigator.clipboard.writeText(passwbox.value);
+    passwbox.value=null;
+    copyicon.classList.add("hidden");
+    tickicon.classList.remove("hidden");
 
+        // Optionally, revert back to the copy icon after a short delay
+        setTimeout(function() {
+            
+            document.getElementById("copyicon").classList.remove("hidden");
+            document.getElementById("tickicon").classList.add("hidden");
+            
+            
+        }, 2000); // 2 seconds delay
+});
 
 //func for generating password.
 generatepassword=()=>{
@@ -46,8 +62,3 @@ generatepassword=()=>{
     return genpass;
 
 }
-copyicon.addEventListener('click',()=>{
-    navigator.clipboard.writeText(passwbox.value);
-})
-
-
