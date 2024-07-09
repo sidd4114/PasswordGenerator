@@ -17,6 +17,7 @@ inputslider.addEventListener('input',()=>{
 
 genebutton.addEventListener('click',()=>{
     passwbox.value=generatepassword();
+    
 
 })
 
@@ -32,6 +33,11 @@ copyicon.addEventListener('click',()=>{
     copyicon.classList.add("hidden");
     tickicon.classList.remove("hidden");
     passwbox.value = "Password Copied";
+    //unchecking checkboxes
+        lowercase.checked = false; 
+        uppercase.checked = false;
+        digits.checked = false;
+        symbols.checked = false;
 
         // Optionally, revert back to the copy icon after a short delay
         setTimeout(function() {
@@ -42,6 +48,7 @@ copyicon.addEventListener('click',()=>{
             passwbox.value=null;
             
         }, 2000); // 2 seconds delay
+        
 });
 
 //func for generating password.
