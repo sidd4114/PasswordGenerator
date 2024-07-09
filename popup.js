@@ -6,7 +6,7 @@ let lowercase=document.getElementById("lowercase");
 let uppercase=document.getElementById("uppercase");
 let digits=document.getElementById("digits");
 let symbols=document.getElementById("symbols");
-
+let copyicon=document.getElementById("copyicon");
 
 inputslider.addEventListener('input',()=>{
     slidervalue.textContent=inputslider.value;  //showing input value when it changes
@@ -46,5 +46,8 @@ generatepassword=()=>{
     return genpass;
 
 }
+copyicon.addEventListener('click',()=>{
+    navigator.clipboard.writeText(passwbox.value);
+})
 
 
