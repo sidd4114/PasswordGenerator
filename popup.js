@@ -31,6 +31,7 @@ copyicon.addEventListener('click',()=>{
     passwbox.value=null;
     copyicon.classList.add("hidden");
     tickicon.classList.remove("hidden");
+    passwbox.value = "Password Copied";
 
         // Optionally, revert back to the copy icon after a short delay
         setTimeout(function() {
@@ -38,6 +39,7 @@ copyicon.addEventListener('click',()=>{
             document.getElementById("copyicon").classList.remove("hidden");
             document.getElementById("tickicon").classList.add("hidden");
             
+            passwbox.value=null;
             
         }, 2000); // 2 seconds delay
 });
