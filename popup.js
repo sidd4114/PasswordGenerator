@@ -38,7 +38,8 @@ copyicon.addEventListener('click',()=>{
         uppercase.checked = false;
         digits.checked = false;
         symbols.checked = false;
-
+        slidervalue.textContent=1;
+        inputslider.value=1;
         // Optionally, revert back to the copy icon after a short delay
         setTimeout(function() {
             
