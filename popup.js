@@ -27,12 +27,20 @@ let allnumbers="0123456789";
 let allsymbol="~!@#$%^&*";
 
 
+
 copyicon.addEventListener('click',()=>{
+    if(lowercase.checked == false &&
+        uppercase.checked == false &&
+        digits.checked == false    &&
+        symbols.checked == false){
+        passwbox.value="Please select an option";
+        }
+    else{
     navigator.clipboard.writeText(passwbox.value);
-    passwbox.value=null;
-    copyicon.classList.add("hidden");
+    passwbox.value=null;  //setting passwbox value to null
+    copyicon.classList.add("hidden");  //hiding copy icon and displaying tick
     tickicon.classList.remove("hidden");
-    passwbox.value = "Password Copied";
+    passwbox.value = "Password Copied to Clipboard!";
     //unchecking checkboxes
         lowercase.checked = false; 
         uppercase.checked = false;
@@ -49,6 +57,7 @@ copyicon.addEventListener('click',()=>{
             passwbox.value=null;
             
         }, 2000); // 2 seconds delay
+    }
         
 });
 
