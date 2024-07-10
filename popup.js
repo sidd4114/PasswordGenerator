@@ -16,7 +16,15 @@ inputslider.addEventListener('input',()=>{
 });
 
 genebutton.addEventListener('click',()=>{
+    if(lowercase.checked == false &&
+        uppercase.checked == false &&
+        digits.checked == false    &&
+        symbols.checked == false){
+        passwbox.value="Please select an option";
+        }
+    else{
     passwbox.value=generatepassword();
+    }
     
 
 })
@@ -62,6 +70,8 @@ copyicon.addEventListener('click',()=>{
 });
 
 //func for generating password.
+
+
 generatepassword=()=>{
     let genpass="";
     let allchars="";
