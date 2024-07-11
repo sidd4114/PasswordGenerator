@@ -27,7 +27,7 @@ genebutton.addEventListener('click',()=>{
     }
     
 
-})
+});
 
 let lowerchars="abcdefghijklmnopqrstuvwxyz";
 let upperchars="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
