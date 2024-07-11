@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Password Generator",
-    "version": "1.0",
+    "version": "0.1.0",
     "description": "Generates a strong password based on user-specified length",
     "action": {
     "default_popup": "popup.html"
@@ -9,5 +9,5 @@
     "icons":{
         "128":"logo128_3.png"
     },
-    "permissions": ["clipboardWrite"]  //to copy generated password to clipboard
+    "permissions": ["clipboardWrite"]  
 }
