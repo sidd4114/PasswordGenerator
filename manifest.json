@@ -9,6 +9,5 @@
     "icons":{
         "128":"logo128_3.png"
     },
-    "permissions": ["storage"]
-  }
-  
+    "permissions": ["clipboardWrite"]  //to copy generated password to clipboard
+}
