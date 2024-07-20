@@ -7,7 +7,7 @@
     "default_popup": "popup.html"
     },
     "icons":{
-        "128":"logo128_3.png"
+        "128":"logo1.png"
     },
     "permissions": ["clipboardWrite"]  
 }
